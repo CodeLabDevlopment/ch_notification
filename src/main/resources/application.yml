@@ -1,0 +1,15 @@
+server:
+  port: ${SERVER_PORT:8084}
+spring:
+  application:
+    name: notification-ms
+  data:
+    mongodb:
+      uri: mongodb://notification_db:password@localhost:27019/notification_db?authSource=admin
+      database: notification_db
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
